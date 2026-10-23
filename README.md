@@ -2,6 +2,7 @@
 
 Marketing site for Vbluetech — AI voice receptionists, AI chat agents and custom websites for US small businesses.
 Plain HTML/CSS/JS: no framework, no build step, no source maps. The only JavaScript is `script.js` (mobile menu toggle, under 1 KB).
+Design: restrained corporate style (navy, white, light gray, one blue accent), inline SVG line icons, no gradients. The home page contains a hidden testimonials section; see the HTML comment there before publishing real, approved quotes.
 
 ## Structure
 | Path | Purpose |
