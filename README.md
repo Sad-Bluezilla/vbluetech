@@ -11,6 +11,7 @@ Design: restrained corporate style (navy, white, light gray, one blue accent), i
 | `services/index.html` | Services |
 | `industries/index.html` | Industries |
 | `contact/index.html` | Contact (demo booking + email) |
+| `thanks/index.html` | Thank-you page after the quote form (noindex, not in sitemap) |
 | `404.html` | Custom not-found page (noindex) |
 | `styles.css`, `script.js` | Shared styles and menu script |
 | `favicon.svg`, `favicon-32x32.png`, `apple-touch-icon.png`, `icon-512.png`, `site.webmanifest` | Icons |
@@ -32,3 +33,7 @@ python3 -m http.server 8000   # open http://localhost:8000
 ## Deploy
 Netlify auto-deploys `main` (https://golden-licorice-225b80.netlify.app). Build command: none; publish directory: `.`.
 Custom domain `vbluetech.com` is not connected yet — add it under Netlify → Domain management and point DNS as Netlify instructs.
+
+## Quote form (Netlify Forms)
+The home page (`/#quote`) and contact page contain a "Request a Quote" form named `quote` (`data-netlify="true"`, honeypot `bot-field`, POST to `/thanks/`). Netlify detects it at deploy time; submissions appear under Netlify → Forms.
+Email notifications (e.g. to hello@vbluetech.com) must be set in Netlify → Site configuration → Notifications → Form submission notifications. No prices are published; every project is quoted manually.

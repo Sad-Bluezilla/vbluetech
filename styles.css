@@ -1,6 +1,6 @@
 :root{--navy:#0f2a4a;--navy-900:#0a1d33;--blue:#1d4f91;--accent:#2f7de1;--ink:#1f2933;--muted:#5b6672;--line:#e3e8ee;--gray:#f4f6f8;--bg:#fff;--radius:6px}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
 body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
 a{color:inherit;text-decoration:none}
 img,svg{display:block}
@@ -110,3 +110,23 @@ p+p{margin-top:1rem}
 .industry-more{border-color:var(--accent);background:#f7fafe}
 .industry-more .btn{align-self:flex-start;margin-top:1.25rem}
 @media (max-width:900px) and (min-width:601px){.ind-grid{grid-template-columns:repeat(2,1fr)}}
+.quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.quote-intro p{color:var(--muted)}.quote-intro .ticks{margin:1.25rem 0 1.5rem}.quote-intro .btn{margin-top:1.75rem}
+.quote-form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:2rem;display:grid;gap:1.1rem}
+.quote-form h3{margin:0}
+.field{display:flex;flex-direction:column;gap:.4rem;border:0;min-width:0}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.field label,.field legend{font-weight:600;font-size:.92rem;color:var(--navy)}
+.field legend{margin-bottom:.4rem}
+.req{color:#b42318}.opt{font-weight:400;color:var(--muted)}
+.quote-form input:not([type=checkbox]),.quote-form select,.quote-form textarea{font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1px solid #c5ced8;border-radius:var(--radius);padding:.65rem .8rem;width:100%}
+.quote-form input:focus,.quote-form select:focus,.quote-form textarea:focus{outline:2px solid var(--accent);outline-offset:0;border-color:var(--accent)}
+.quote-form textarea{resize:vertical}
+.check{display:flex!important;align-items:center;gap:.6rem;font-weight:400!important;color:var(--ink)!important;padding:.2rem 0}
+.check input{width:18px;height:18px;accent-color:var(--accent)}
+.form-note{font-size:.85rem;color:var(--muted)}
+.quote-form .btn{justify-self:start;cursor:pointer;font:inherit;font-weight:600}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media (max-width:900px){.quote-grid{grid-template-columns:1fr;gap:2.5rem}}
+@media (max-width:520px){.field-row{grid-template-columns:1fr}.quote-form{padding:1.5rem}}
+@media (max-width:1000px) and (min-width:769px){.nav-links{gap:1.2rem}}

@@ -11,7 +11,8 @@
 - [Home](https://vbluetech.com/): overview of services, industries and how it works
 - [Services](https://vbluetech.com/services/): details on AI voice agents, AI chat agents and custom websites
 - [Industries](https://vbluetech.com/industries/): restaurants, cafes, auto repair, home services, HVAC, dental, med spas, real estate, salons, law offices, clinics, fitness studios and other local businesses
-- [Contact](https://vbluetech.com/contact/): book a demo or email
+- [Request a quote](https://vbluetech.com/#quote): every project is custom; quotes are prepared after a short conversation, based on website size, AI voice agent setup, call minutes, languages, chat agent, integrations and ongoing support. No fixed prices are published.
+- [Contact](https://vbluetech.com/contact/): book a demo, request a quote or email
 
 ## Contact
 - Email: hello@vbluetech.com
