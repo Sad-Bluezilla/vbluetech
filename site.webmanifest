@@ -1,0 +1,14 @@
+{
+  "name": "Vbluetech",
+  "short_name": "Vbluetech",
+  "description": "AI voice receptionists, AI chat agents and custom websites for US small businesses.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#1d4ed8",
+  "icons": [
+    {"src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any"},
+    {"src": "/apple-touch-icon.png", "type": "image/png", "sizes": "180x180"},
+    {"src": "/icon-512.png", "type": "image/png", "sizes": "512x512"}
+  ]
+}

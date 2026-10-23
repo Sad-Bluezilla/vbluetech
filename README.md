@@ -1,21 +1,33 @@
-# Vbluetech – Landing Page
+# Vbluetech website
 
-Static site: `index.html`, `styles.css`, `script.js`. No build step, no backend.
+Marketing site for Vbluetech — AI voice receptionists, AI chat agents and custom websites for US small businesses.
+Plain HTML/CSS/JS: no framework, no build step, no source maps. The only JavaScript is `script.js` (mobile menu toggle, under 1 KB).
 
-**Demo booking:** all "Book a Demo" buttons link to the live Calendly event https://calendly.com/vbluetech/vbluetech-demo-call (15 min, weekdays 9am-5pm Eastern).
+## Structure
+| Path | Purpose |
+|---|---|
+| `index.html` | Home (ProfessionalService + WebSite JSON-LD) |
+| `services/index.html` | Services |
+| `industries/index.html` | Industries |
+| `contact/index.html` | Contact (demo booking + email) |
+| `404.html` | Custom not-found page (noindex) |
+| `styles.css`, `script.js` | Shared styles and menu script |
+| `favicon.svg`, `favicon-32x32.png`, `apple-touch-icon.png`, `icon-512.png`, `site.webmanifest` | Icons |
+| `og-image.png` | 1200×630 social share image |
+| `sitemap.xml`, `robots.txt`, `llms.txt` | Crawler / AI discovery files |
+| `netlify.toml` | Publish dir + security headers |
+| `CNAME` | `vbluetech.com` (for GitHub Pages; Netlify uses its dashboard) |
+
+All pages share the same header/footer and use root-relative links (`/services/`), so the site must be served from a domain root.
+Every page has a unique title, meta description, canonical URL on `https://vbluetech.com/`, Open Graph/Twitter tags and one `<h1>`; inner pages have breadcrumbs with BreadcrumbList JSON-LD. When adding a page, also add it to the nav/footer, `sitemap.xml` and `llms.txt`.
+
+Booking: https://calendly.com/vbluetech/vbluetech-demo-call · Contact: hello@vbluetech.com
 
 ## Preview locally
 ```
-python3 -m http.server 8000   # then open http://localhost:8000
+python3 -m http.server 8000   # open http://localhost:8000
 ```
 
-## Deploy to GitHub Pages
-1. Create a repo (e.g. `vbluetech-site`) and push these files to the `main` branch root.
-2. Repo → Settings → Pages → Source: "Deploy from a branch", Branch: `main` / `(root)` → Save.
-3. Site goes live at `https://<user>.github.io/vbluetech-site/` (relative paths work in subfolders).
-4. Custom domain: this folder includes a `CNAME` file containing `vbluetech.com`, so GitHub Pages will serve the site at https://vbluetech.com. Point DNS: apex A records to GitHub Pages IPs (185.199.108.153, .109.153, .110.153, .111.153) and/or `www` CNAME to `<user>.github.io`; enable "Enforce HTTPS". (Netlify ignores the CNAME file—set the domain in its dashboard.)
-
-## Deploy to Netlify
-- **Drag & drop:** go to https://app.netlify.com/drop and drop this folder (or the zip).
-- **From Git:** New site → Import from Git → pick the repo; build command: *(empty)*, publish directory: `.`
-- Add a custom domain under Site settings → Domain management.
+## Deploy
+Netlify auto-deploys `main` (https://golden-licorice-225b80.netlify.app). Build command: none; publish directory: `.`.
+Custom domain `vbluetech.com` is not connected yet — add it under Netlify → Domain management and point DNS as Netlify instructs.
