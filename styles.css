@@ -100,3 +100,13 @@ p+p{margin-top:1rem}
  .hero{padding:4.5rem 0}.section{padding:4rem 0}
 }
 @media (max-width:520px){.grid-4,.footer-grid{grid-template-columns:1fr}}
+.section-head .lead{margin-top:1rem}
+.ind-mini{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
+.ind-mini a{display:flex;align-items:center;gap:.9rem;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:.9rem 1rem;font-weight:600;color:var(--navy);transition:border-color .2s}
+.ind-mini a:hover{border-color:var(--accent)}
+.ind-mini .icon{margin:0;width:40px;height:40px;flex:none}
+.ind-mini .icon svg{width:22px;height:22px}
+.industry{display:flex;flex-direction:column}
+.industry-more{border-color:var(--accent);background:#f7fafe}
+.industry-more .btn{align-self:flex-start;margin-top:1.25rem}
+@media (max-width:900px) and (min-width:601px){.ind-grid{grid-template-columns:repeat(2,1fr)}}

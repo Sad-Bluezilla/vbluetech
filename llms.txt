@@ -1,6 +1,6 @@
 # Vbluetech
 
-> Vbluetech builds AI voice receptionists, AI chat agents and custom websites for small businesses in the United States, with a focus on HVAC companies, dental practices, med spas and real estate agents.
+> Vbluetech builds AI voice receptionists, AI chat agents and custom websites for small businesses in the United States, serving local businesses such as restaurants, cafes and coffee shops, auto repair shops, home services (plumbing, electrical, roofing, cleaning, landscaping), HVAC, dental practices, med spas, real estate agents, salons and barbershops, law offices, clinics and chiropractors, and fitness studios.
 
 ## Services
 - AI Voice Agents: an AI receptionist that answers calls 24/7, handles common questions, books appointments and routes urgent calls to the business's team.
@@ -10,7 +10,7 @@
 ## Pages
 - [Home](https://vbluetech.com/): overview of services, industries and how it works
 - [Services](https://vbluetech.com/services/): details on AI voice agents, AI chat agents and custom websites
-- [Industries](https://vbluetech.com/industries/): HVAC, dental, med spas and real estate
+- [Industries](https://vbluetech.com/industries/): restaurants, cafes, auto repair, home services, HVAC, dental, med spas, real estate, salons, law offices, clinics, fitness studios and other local businesses
 - [Contact](https://vbluetech.com/contact/): book a demo or email
 
 ## Contact
