@@ -1,6 +1,6 @@
-# Vbluetech
+# vBlueTech
 
-> Vbluetech builds AI voice receptionists, AI chat agents and custom websites for small businesses in the United States, serving local businesses such as restaurants, cafes and coffee shops, auto repair shops, home services (plumbing, electrical, roofing, cleaning, landscaping), HVAC, dental practices, med spas, real estate agents, salons and barbershops, law offices, clinics and chiropractors, and fitness studios.
+> vBlueTech builds AI voice receptionists, AI chat agents and custom websites for small businesses in the United States, serving local businesses such as restaurants, cafes and coffee shops, auto repair shops, home services (plumbing, electrical, roofing, cleaning, landscaping), HVAC, dental practices, med spas, real estate agents, salons and barbershops, law offices, clinics and chiropractors, and fitness studios.
 
 ## Services
 - AI Voice Agents: an AI receptionist that answers calls 24/7, handles common questions, books appointments and routes urgent calls to the business's team.
